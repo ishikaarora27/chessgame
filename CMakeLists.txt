@@ -13,19 +13,19 @@ set(MODEL_SRC
 # TODO: PUT ADDITIONAL NON-MODEL (UI) .cxx FILES IN THIS LIST:
 add_program(${GAME_EXE}
         ${MODEL_SRC}
-        "../../Downloads/final_project 5/src/view.cxx"
-        "../../Downloads/final_project 5/src/controller.cxx"
-        "../../Downloads/final_project 5/src/main.cxx"
-        "../../Downloads/final_project 5/src/board.cxx"
-        "../../Downloads/final_project 5/src/player.cxx"
-        "../../Downloads/final_project 5/src/move.cxx"
-        "../../Downloads/final_project 5/src/piece.cxx"
-        "../../Downloads/final_project 5/src/pawn.cxx"
-        "../../Downloads/final_project 5/src/king.cxx"
-        "../../Downloads/final_project 5/src/queen.cxx"
-        "../../Downloads/final_project 5/src/rook.cxx"
-        "../../Downloads/final_project 5/src/bishop.cxx"
-        "../../Downloads/final_project 5/src/knight.cxx")
+        "src/view.cxx"
+        "src/controller.cxx"
+        "src/main.cxx"
+        "src/board.cxx"
+        "src/player.cxx"
+        "src/move.cxx"
+        "src/piece.cxx"
+        "src/pawn.cxx"
+        "src/king.cxx"
+        "src/queen.cxx"
+        "src/rook.cxx"
+        "src/bishop.cxx"
+        "src/knight.cxx")
 target_link_libraries(${GAME_EXE} ge211)
 
 add_test_program(model_test

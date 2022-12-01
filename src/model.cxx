@@ -14,7 +14,13 @@ void create_move(ge211::Posn<int> start, ge211::Posn<int> end){
     else if(board_.get_piece(end).get_player() = other_player(turn_)){
         //board.remove
         //board.set
-    }
+    }//
 
+
+}
+
+private:
+
+    void calculate_valid_moves(Piece p){
 
 }

@@ -16,4 +16,9 @@ protected:
 private:
     Model model_;
     View view_;
+    View::Position start_position;
+    View::Position end_position;
+
+
+    void on_mouse_down(ge211::Mouse_button button, View::Position position) override;
 };

@@ -16,6 +16,8 @@ public:
 
     void create_move(ge211::Posn<int> start, ge211::Posn<int> end);
 
+    void set_game_over();
+
 private:
 
     Player turn_;
