@@ -11,4 +11,5 @@ public:
 
 private:
     Model const& model_;
+    ge211::sprites::Image_sprite sprite;
 };

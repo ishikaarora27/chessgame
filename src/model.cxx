@@ -22,5 +22,9 @@ void create_move(ge211::Posn<int> start, ge211::Posn<int> end){
 private:
 
     void calculate_valid_moves(Piece p){
+    //iterate through the directions
+    // ge211:Posn<int> current = the piece's current position
+    // current = current + dir (direction)
+    // if(board[current].occupied by your piece, don't add, otherwise add it to piece.moves
 
 }

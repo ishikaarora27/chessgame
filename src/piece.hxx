@@ -20,6 +20,10 @@ public:
 
 
 
+
+
+
+
 private:
 
     //the number of points a piece is worth
@@ -31,7 +35,7 @@ private:
 
 
     //the different directions that the piece can travel in
-    std::vector<ge211::Posn<int>> directions;
+    std::vector<ge211::Dims<int>> directions;
 
 }
 
