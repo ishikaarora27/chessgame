@@ -9,33 +9,3 @@ ld: library not found for -lc++
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
 
-Performing C++ SOURCE FILE Test CXXFLAG_WCAST_ALIGN_STRICT_OKAY failed with the following output:
-Change Dir: /Users/ishika/Downloads/final_project 5/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_815ab/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_815ab.dir/build.make CMakeFiles/cmTC_815ab.dir/build
-Building CXX object CMakeFiles/cmTC_815ab.dir/src.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WCAST_ALIGN_STRICT_OKAY  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5   -Wcast-align=strict -MD -MT CMakeFiles/cmTC_815ab.dir/src.cxx.o -MF CMakeFiles/cmTC_815ab.dir/src.cxx.o.d -o CMakeFiles/cmTC_815ab.dir/src.cxx.o -c "/Users/ishika/Downloads/final_project 5/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx"
-warning: unknown warning option '-Wcast-align=strict'; did you mean '-Wcast-align'? [-Wunknown-warning-option]
-1 warning generated.
-Linking CXX executable cmTC_815ab
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_815ab.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_815ab.dir/src.cxx.o -o cmTC_815ab 
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test CXXFLAG_WERROR_BOOL_COMPARE_OKAY failed with the following output:
-Change Dir: /Users/ishika/Downloads/final_project 5/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e9ba/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4e9ba.dir/build.make CMakeFiles/cmTC_4e9ba.dir/build
-Building CXX object CMakeFiles/cmTC_4e9ba.dir/src.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++ -DCXXFLAG_WERROR_BOOL_COMPARE_OKAY  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5   -Werror=bool-compare -MD -MT CMakeFiles/cmTC_4e9ba.dir/src.cxx.o -MF CMakeFiles/cmTC_4e9ba.dir/src.cxx.o.d -o CMakeFiles/cmTC_4e9ba.dir/src.cxx.o -c "/Users/ishika/Downloads/final_project 5/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx"
-warning: unknown warning option '-Werror=bool-compare' [-Wunknown-warning-option]
-1 warning generated.
-Linking CXX executable cmTC_4e9ba
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e9ba.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_4e9ba.dir/src.cxx.o -o cmTC_4e9ba 
-
-
-Source file was:
-int main() { return 0; }

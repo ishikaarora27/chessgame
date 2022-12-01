@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S "/Users/ishika/Downloads/final_project 5" -B "/Users/ishika/Downloads/final_project 5/cmake-build-debug"
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/ishika/CLionProjects/chessgame -B /Users/ishika/CLionProjects/chessgame/cmake-build-debug
 CMake Error at CMakeLists.txt:7 (include):
   include could not find requested file:
 
@@ -10,5 +10,5 @@ CMake Error at CMakeLists.txt:14 (add_program):
 
 
 -- Configuring incomplete, errors occurred!
-See also "/Users/ishika/Downloads/final_project 5/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "/Users/ishika/Downloads/final_project 5/cmake-build-debug/CMakeFiles/CMakeError.log".
+See also "/Users/ishika/CLionProjects/chessgame/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/ishika/CLionProjects/chessgame/cmake-build-debug/CMakeFiles/CMakeError.log".
