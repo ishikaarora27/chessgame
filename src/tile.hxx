@@ -12,13 +12,11 @@
 class Tile{
 
 public:
+//constructor
 
-    Tile(Piece piece, ge211::Posn<int> position)
-            : piece(piece),
-              position(position)
-    {
-
-    }
+    Tile(Piece piece, Position pos);
+    //constructor with pos only
+    Tile(Position pos);
     //returns whether the tile is occupied
     bool occupied();
 
@@ -43,7 +41,7 @@ private:
     //represents the color of the tile: 0 = dark color, 1 = light color
     bool color;
 
-    //the posiiion of the top left corner of the tile
+    //the positiion of the top left corner of the tile
     ge211::Posn<int> position;
 
 

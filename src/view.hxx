@@ -58,8 +58,13 @@ private:
     add_player_sprite_(ge211::Sprite_set&, Player, Position, int z) const;
 
     void
-    draw_grid (ge211::Sprite_set& set, Position pos, int z);
+    draw_grid (ge211::Sprite_set& set, ge211::Rectangle_sprite rec1,
+               ge211::Rectange_sprite rec2, int z);
     //just do this manually: do set.add (green_square) and set.add (white_square) at all necessary positions
+
+    //helper alternator function
+    //different starting sprites
+
 
     void
     draw_pieces (Model model, ge211::Sprite_set& set);

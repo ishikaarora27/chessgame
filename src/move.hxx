@@ -10,18 +10,36 @@
 class Move
 {
 
+    using Position = ge211::Posn<int>;
 public:
 
-    Move(ge211::Posn<int> initial, ge211::Posn<int> final);
+    enum MoveType : int {
+        Standard = 0,
+        Capture = 1,
+        Promotion = 2
+    };
+
+    //constructor with positions only
+    Move(Position initial, Position final);
+
+    Move(Position initial, Position final, MoveType type);
 
    // Player player_at_end(ge211::Posn<int> pos);
 
+    // adds a type to a move
+    void add_type(MoveType type);
+    // checks if a move is of a given type
+    bool is_type(MoveType type) const;
+    // Returns a pointer to the captured piece if the move is a capture.
+    // If not it returns a nullptr
+    Piece* get_captured_piece() const;
+
 private:
     //the starting position
-    ge211::Posn<int> start;
+    Position start;
 
     //the ending position
-    ge211::Posn<int> end;
+    Position end;
 
     //is the move valid?
     bool valid;

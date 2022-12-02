@@ -10,13 +10,22 @@
 #include <string>
 
 
+Tile::Tile(Piece piece, Position position)
+: piece(piece),
+position(position)
+{
+
+}
 
 
-Tile::Tile(Piece piece, ge211::Posn<int> position)
+Tile::Tile(Position pos)
+: position(pos)
 {}
+
+
     //returns whether the tile is occupied
     bool occupied(){
-        if(piece != null){
+        if(&piece != nullptr){
             return true;
         }
         else{
@@ -26,7 +35,7 @@ Tile::Tile(Piece piece, ge211::Posn<int> position)
 
     //clear the tile of any pieces
     void clear(){
-        piece = NULL;
+        &piece = nullptr;
     }
 
 

@@ -65,7 +65,7 @@ public:
 private:
 
     //The 2D array of Tiles
-    Piece grid [][];
+    Tile grid [][];
 
 
 

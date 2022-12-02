@@ -43,11 +43,29 @@ View::View(Model const& model, const char* filenames[12])
     }
 }
 
+static int const tile_size = 100;
+
 void
 View::draw(ge211::Sprite_set& set)
 {
-    // This needs to do something!
+    draw_grid(set, green_square, white_square, 0);
 }
+
+
+View::Dimensions
+View::initial_window_dimensions() const
+{
+    // You can change this if you want:
+    return (grid_size + margin) * model_.board().dimensions();
+}
+
+std::string
+View::initial_window_title() const
+{
+    // You can change this if you want:
+    return "chess";
+}
+
 
 void
 add_player_sprite_(ge211::Sprite_set&, Player, Position, int z) {
@@ -61,6 +79,45 @@ draw_grid (ge211::Sprite_set& set, int z) {
 
 }
 //just do this manually: do set.add (green_square) and set.add (white_square) at all necessary positions
+
+
+void draw_grid(ge211::Sprite_set& set,
+                ge211::Rectangle_sprite rect1,
+                ge211::Rectangle_sprite rect2,
+                int z) {
+    for(int i = 0; i<model.board().board_size, i++){
+        if(i % 2 == 0) {
+            for (int j = 0; j < board().board_size; j++) {
+                if (j % 2 == 0) {
+                    Position pos = {i, j};
+                    pos = board_to_screen(pos);
+                    set.add_sprite(rect1, pos, z);
+                } else {
+                    Position pos = {i, j};
+                    pos = board_to_screen(pos);
+                    set.add_sprite(rect2, pos, z);
+                }
+            }
+        }
+        else{
+                for(int j = 0; j < board().board_size; j++){
+                    if(j % 2 == 0){
+                        Position pos = {i,j};
+                        pos = board_to_screen(pos);
+                        set.add_sprite(rect2,  pos, z);
+                    }
+                    else{
+                        Position pos = {i,j};
+                        pos = board_to_screen(pos);
+                        set.add_sprite(rect1,  pos, z);
+                    }
+            }
+        }
+    }
+}
+
+
+
 
 void
 draw_pieces (Model model, ge211::Sprite_set& set);
