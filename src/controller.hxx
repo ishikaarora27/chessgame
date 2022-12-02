@@ -8,7 +8,7 @@
 class Controller : public ge211::Abstract_game
 {
 public:
-    Controller();
+    Controller(char* filenames[12]);
 
 protected:
     void draw(ge211::Sprite_set& set) override;

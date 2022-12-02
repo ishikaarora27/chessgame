@@ -1,8 +1,8 @@
 #include "controller.hxx"
 
 
-Controller::Controller()
-        : view_(model_)
+Controller::Controller(const char* filenames[12])
+        : view_(model_, filenames)
 { }
 
 void
